@@ -60,7 +60,7 @@ def open_video_dialog():
     model.setInputScale(1.0/127.5)
     model.setInputMean((127.5, 127.5, 127.5))
     model.setInputSwapRB(True)
-    cap = cv2.VideoCapture("test_video.mp4")
+    cap = cv2.VideoCapture(file_path)
     ret, frame = cap.read()
 
     fourcc = cv2.VideoWriter_fourcc(*'mp4v')
